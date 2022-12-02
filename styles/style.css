@@ -1,0 +1,107 @@
+/*resest default styling*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.landing-page {
+  color: white;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle at left, rgb(0, 212, 255) 0%, rgb(9, 9, 121) 55%, rgb(2, 0, 36) 100%);
+}
+.landing-page .row {
+  width: 100%;
+  max-width: 80rem;
+  display: flex;
+  justify-content: center;
+}
+.landing-page .column {
+  width: 55%;
+  padding: 1rem;
+  margin: 1rem;
+}
+.landing-page .column:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45%;
+}
+.landing-page .column h1 {
+  font-size: 4rem;
+  padding: 0 1rem;
+  font-weight: 500;
+  line-height: 4rem;
+}
+.landing-page .column p {
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.landing-page .column a {
+  display: inline-block;
+  margin-left: 1rem;
+  text-decoration: none;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background: black;
+  color: white;
+  transition: transform 0.25s ease-in-out;
+  cursor: pointer;
+}
+.landing-page .column a:hover {
+  transform: scale(1.1);
+}
+.landing-page .column a i {
+  font-size: 1rem;
+  margin-inline: 0.3rem;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.play {
+  background: white !important;
+  color: black !important;
+}
+
+@media (max-width: 58.75rem) {
+  .landing-page {
+    background: radial-gradient(circle at top, rgb(0, 212, 255) 0%, rgb(9, 9, 121) 55%, rgb(2, 0, 36) 100%);
+  }
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .row .column {
+    width: calc(100% - 2rem);
+  }
+  .row .column h1 {
+    font-size: 2.7rem;
+    line-height: 3rem;
+  }
+  .row .column p {
+    font-size: 1.2rem;
+  }
+  .row .column:nth-child(1) {
+    min-height: 60vh;
+  }
+}/*# sourceMappingURL=style.css.map */

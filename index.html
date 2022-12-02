@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+    <section class="landing-page">
+        <div class="row">
+            <div class="column" id="renderElement">
+            </div>
+            <div class="column">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                    beatae obcaecati impedit libero ut iusto nesciunt harum cum mollitia
+                    facere.
+                </p>
+                <a href="#" class="explore">Explore</a>
+                <a href="#" class="play"><i class="fa-solid fa-play"></i>Video</a>
+            </div>
+        </div>
+    </section>
+    <script src="src/scripts/utils/three.js"></script>
+    <script src="src/scripts/utils/OrbitControls.js"></script>
+    <script src="/src/scripts/three.js" type="module"></script>
+    <script src="/src/scripts/main.js"></script>
+</body>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    #container {
+        margin: auto;
+    }
+
+    #canvas {
+        margin: 0 auto;
+    }
+
+    #renderElement {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+</html>
