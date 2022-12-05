@@ -11,6 +11,7 @@ THREE.Cache.enabled = true;
 // Config renderer
 let renderer = new THREE.WebGLRenderer();
 renderer.setSize(500, 500);
+
 //set transparent bg
 renderer.setClearColor(0xffffff, 0);
 scene.background = null;

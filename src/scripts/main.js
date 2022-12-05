@@ -1,8 +1,16 @@
 const playBtn = document.querySelector(".play");
-const landingPage = document.querySelector(".landing-page");
+const videoContainer = document.querySelector(".video-container");
+const canvas = document.querySelector("#renderElement");
 
 playBtn.addEventListener("click", () => {
-    const video = document.querySelector("video");
-    video.style.opacity = 1;
-    video.play();
+    videoContainer.classList.toggle("display");
+    if (videoContainer.classList.contains("display")) {
+        if (window.innerWidth < 940) {
+            canvas.style.display = "none";
+        }
+        playBtn.innerHTML = '<i class="fa-solid fa-stop"></i>Stop';
+    } else {
+        canvas.style.display = "block";
+        playBtn.innerHTML = '<i class="fa-solid fa-play"></i>Video';
+    }
 });
